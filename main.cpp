@@ -91,9 +91,9 @@ int main(int argc, char *argv[]) {
     catch (std::exception &e){
         std::cout << e.what();
     }
-
     messageQueue.Push(buffer);
     buffer.clear();
+    messageQueue.Push(buffer);
     thread.join();
     return 0;
 }
