@@ -11,7 +11,6 @@
 #include "Hexagon.h"
 #include "Octagon.h"
 
-template <class T>
 struct Factory{
     std::shared_ptr<Figure> CreateFigure(std::string &type){
         std::shared_ptr<Figure> result;
